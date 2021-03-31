@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_i18n_2021/screens/settings.dart';
 import 'package:flutter_i18n_2021/widgets/hero_card.dart';
 
 class HeroList extends StatelessWidget {
@@ -16,12 +15,7 @@ class HeroList extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.settings),
             tooltip: 'Open settings',
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Settings()),
-              );
-            },
+            onPressed: () => Navigator.pushNamed(context, '/settings'),
           )
         ],
       ),
@@ -60,8 +54,7 @@ class HeroList extends StatelessWidget {
                   HeroCard(
                     name: 'Steve Wozniak',
                     born: '11 August 1950',
-                    bio: 'Designed & developed the Apple I & Apple II '
-                        'microcomputers.',
+                    bio: 'Developed the Apple I & Apple II microcomputers.',
                     imagePath: 'assets/images/steve_wozniak.jpg',
                   ),
                   HeroCard(
