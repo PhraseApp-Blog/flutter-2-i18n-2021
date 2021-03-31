@@ -1,3 +1,6 @@
 {
-  "appTitle": "أبطال علوم الكمبيوتر"
+  "appTitle": "أبطال علوم الكمبيوتر",
+  "openSettings": "إفتح الإعدادات",
+  "heroCount": "{count,plural, =0{لا توجد أبطال بعد} =1{بطل {count}} =2{بطلان} few{{count} أبطال} many{{count} بطل} other{{count} بطل}",
+  "wozniakBio": "طور جهازي كمبيوتر {appleOne} و {appleTwo}"
 }

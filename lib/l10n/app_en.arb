@@ -1,3 +1,17 @@
 {
-  "appTitle": "Heroes of Computer Science"
+  "appTitle": "Heroes of Computer Science",
+  "openSettings": "Open Settings",
+  "heroCount": "{count,plural, =0{No heroes yet} =1{1 hero} other{{count} heroes}}",
+  "@heroCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "wozniakBio": "Developed the {appleOne} & {appleTwo} microcomputers.",
+  "@wozniakBio": {
+    "placeholders": {
+      "appleOne": {},
+      "appleTwo": {}
+    }
+  }
 }

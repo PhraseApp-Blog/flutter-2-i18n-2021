@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_i18n_2021/widgets/hero_card.dart';
 
 class HeroList extends StatelessWidget {
@@ -8,13 +9,15 @@ class HeroList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var t = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.settings),
-            tooltip: 'Open settings',
+            tooltip: t.openSettings,
             onPressed: () => Navigator.pushNamed(context, '/settings'),
           )
         ],
@@ -25,7 +28,7 @@ class HeroList extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
-              child: Text('6 Hereos'),
+              child: Text(t.heroCount(6)),
             ),
             Expanded(
               child: ListView(
@@ -54,7 +57,7 @@ class HeroList extends StatelessWidget {
                   HeroCard(
                     name: 'Steve Wozniak',
                     born: '11 August 1950',
-                    bio: 'Developed the Apple I & Apple II microcomputers.',
+                    bio: t.wozniakBio('Apple I', 'Apple II'),
                     imagePath: 'assets/images/steve_wozniak.jpg',
                   ),
                   HeroCard(
