@@ -8,7 +8,7 @@ class Settings extends StatelessWidget {
         title: Text('Settings'),
       ),
       body: Center(
-        child: Text('Setting Screen'),
+        child: Text('Settings Screen'),
       ),
     );
   }
