@@ -2,5 +2,18 @@
   "appTitle": "أبطال علوم الكمبيوتر",
   "openSettings": "إفتح الإعدادات",
   "heroCount": "{count,plural, =0{لا توجد أبطال بعد} =1{بطل {count}} =2{بطلان} few{{count} أبطال} many{{count} بطل} other{{count} بطل}",
-  "wozniakBio": "طور جهازي كمبيوتر {appleOne} و {appleTwo}"
+  "hopperName": "جريس هوبر",
+  "hopperBio": "إبتكرت نظرية للغات البرمجة المستقلة عن الجهاز.",
+  "turingName": "آلان تورينج",
+  "turingBio": "الأب الروحي لعلوم الكمبيوتر النظرية والذكاء الاصطناعي.",
+  "liskovName": "باربرا ليسكوف",
+  "liskovBio": "الفائزة بجائزة تورينج، مخترعة مبدأ استبدال ليسكوف.",
+  "wozniakName": "ستيف وزنياك",
+  "wozniakBio": "طور جهازي كمبيوتر {appleOne} و {appleTwo}",
+  "bernersLeeName": "تيم برنرز - لي",
+  "bernersLeeBio": "مخترع شبكة الويب العالمية.",
+  "gatesName": "بيل جيتس",
+  "gatesBio": "المؤسس المشارك لشركة {microsoft} ، محب الخير.",
+  "settings": "الإعدادات",
+  "settingsScreen": "شاشة الإعدادات"
 }

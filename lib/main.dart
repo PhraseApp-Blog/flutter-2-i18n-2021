@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: true,
       onGenerateTitle: (BuildContext context) {
         return AppLocalizations.of(context).appTitle;
       },

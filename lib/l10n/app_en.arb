@@ -7,11 +7,29 @@
       "count": {}
     }
   },
+  "hopperName": "Grace Hopper",
+  "hopperBio": "Devised theory of machine-independent programming languages.",
+  "turingName": "Alan Turing",
+  "turingBio": "Father of theoretical computer science & artificial intelligence.",
+  "liskovName": "Barbara Liskov",
+  "liskovBio": "Turing Award winner; inventor of Liskov substitution principle.",
+  "wozniakName": "Steve Wozniak",
   "wozniakBio": "Developed the {appleOne} & {appleTwo} microcomputers.",
   "@wozniakBio": {
     "placeholders": {
       "appleOne": {},
       "appleTwo": {}
     }
-  }
+  },
+  "bernersLeeName": "Tim Berners-Lee",
+  "bernersLeeBio": "Inventor of the World Wide Web.",
+  "gatesName": "Bill Gates",
+  "gatesBio": "Co-founder of {microsoft}; philanthropist.",
+  "@gatesBio": {
+    "placeholders": {
+      "microsoft": {}
+    }
+  },
+  "settings": "Settings",
+  "settingsScreen": "Settings Screen"
 }
