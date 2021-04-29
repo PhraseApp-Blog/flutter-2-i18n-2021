@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HeroCard extends StatelessWidget {
   final String name;
@@ -8,17 +10,21 @@ class HeroCard extends StatelessWidget {
 
   final String placeholderImagePath = 'assets/images/placeholder.jpg';
 
-  const HeroCard({
+  final DateTime bornDateTime;
+
+  HeroCard({
     Key key,
     this.name = '',
     this.born = '',
     this.bio = '',
     this.imagePath,
-  }) : super(key: key);
+  })  : bornDateTime = new DateFormat('d MMMM yyyy').parse(born),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    var t = AppLocalizations.of(context);
 
     return Card(
       child: Padding(
@@ -51,7 +57,7 @@ class HeroCard extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 2, bottom: 4),
                     child: Text(
-                      born.isEmpty ? '' : 'Born $born',
+                      born.isEmpty ? '' : t.heroBorn(bornDateTime),
                       style:
                           TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
                     ),

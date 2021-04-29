@@ -7,6 +7,15 @@
       "count": {}
     }
   },
+  "heroBorn": "Born {date}",
+  "@heroBorn": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
   "hopperName": "Grace Hopper",
   "hopperBio": "Devised theory of machine-independent programming languages.",
   "turingName": "Alan Turing",
